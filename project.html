@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Total Solutions - Professional therapy services for comprehensive care"
+    />
+    <title>Total Solutions | Comprehensive Therapy Services</title>
+    <link rel="stylesheet" href="project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/project.html" aria-label="Home">Total Solutions</a>
+        </div>
+        <div class="nav-links">
+          <a href="#service" onclick="loadPage('service.html')">Services</a>
+          <a href="#about" onclick="loadPage('aboutus.html')">About Us</a>
+          <a href="#therapyplans" onclick="loadPage('therapycost.html')"
+            >Therapy Plans</a
+          >
+          <a href="#contactSection">Contact</a>
+          <!-- Changed to direct link -->
+        </div>
+      </nav>
+    </header>
+
+    <main id="content">
+      <div class="carousel-container">
+        <div class="carousel-slide"></div>
+        <div class="carousel-slide">Behavior</div>
+        <div class="carousel-slide">Speech</div>
+      </div>
+
+      <!-- Welcome Message -->
+      <section class="welcome-section">
+        <h1>Welcome to Total Solutions</h1>
+        <p>
+          Your trusted partner in comprehensive therapeutic care. With over 15
+          years of experience, we provide personalized treatment plans tailored
+          to individual needs.
+        </p>
+      </section>
+
+      <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <a href="#assessment" class="service-card">
+            <div class="service-image">
+              <img src="images/demo1.png" alt="Assessment" />
+            </div>
+            <h3>Assessment & Evaluation</h3>
+          </a>
+
+          <!-- Service 2 -->
+          <a href="#occupational-therapy" class="service-card">
+            <div class="service-image">
+              <img
+                src="https://source.unsplash.com/random/200x200/?occupational-therapy"
+                alt="Occupational Therapy"
+              />
+            </div>
+            <h3>Occupational Therapy</h3>
+          </a>
+
+          <!-- Service 3 -->
+          <a href="#behavior-therapy" class="service-card">
+            <div class="service-image">
+              <img
+                src="https://source.unsplash.com/random/200x200/?behavior-therapy"
+                alt="Behavior Therapy"
+              />
+            </div>
+            <h3>Behavior Therapy</h3>
+          </a>
+
+          <!-- Add more services as needed -->
+        </div>
+      </section>
+
+      <!-- Branches Section -->
+      <section class="branches-section">
+        <h2>Our Branches</h2>
+        <div class="branches-grid">
+          <div class="branch-card">
+            <h3>Total Solutions</h3>
+            <p>
+              3-4-495/B, 1st Floor, YMCA, Near More Supermarket<br />Barkatpura,
+              Hyderabad - 500027<br />Phone: (+91) 1234567890
+            </p>
+          </div>
+          <div class="branch-card">
+            <h3>Westside Clinic</h3>
+            <p>
+              456 Wellness Avenue<br />Los Angeles, CA 90001<br />Phone: (555)
+              765-4321
+            </p>
+          </div>
+          <div class="branch-card">
+            <h3>Northern Center</h3>
+            <p>
+              789 Care Road<br />Chicago, IL 60601<br />Phone: (555) 987-6543
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Treatments Section -->
+      <section class="treatments-section">
+        <h2>Our Treatments</h2>
+        <div class="treatment-grid">
+          <div class="treatment-card">
+            <img
+              src="https://source.unsplash.com/random/400x400/?occupational-therapy"
+              alt="Occupational Therapy"
+              class="treatment-image"
+            />
+            <div class="treatment-overlay">
+              <h3>Occupational Therapy</h3>
+            </div>
+          </div>
+          <div class="treatment-card">
+            <img
+              src="https://source.unsplash.com/random/400x400/?speech-therapy"
+              alt="Speech Therapy"
+              class="treatment-image"
+            />
+            <div class="treatment-overlay">
+              <h3>Speech Therapy</h3>
+            </div>
+          </div>
+          <div class="treatment-card">
+            <img
+              src="https://source.unsplash.com/random/400x400/?behavior-therapy"
+              alt="Behavior Therapy"
+              class="treatment-image"
+            />
+            <div class="treatment-overlay">
+              <h3>Behavior Therapy</h3>
+            </div>
+          </div>
+          <div class="treatment-card">
+            <img
+              src="https://source.unsplash.com/random/400x400/?physical-therapy"
+              alt="Physical Therapy"
+              class="treatment-image"
+            />
+            <div class="treatment-overlay">
+              <h3>Physical Therapy</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="additional-info">
+      <div class="info-box">
+        <h3>Why Choose Us?</h3>
+        <ul>
+          <li>Certified Professionals</li>
+          <li>Personalized Care Plans</li>
+          <li>Child-Friendly Environment</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container" id="contactSection">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="subject">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="name">Mobile</label>
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="Enter Mobile Number"
+                required
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Enter subject"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+
+        <div style="text-align: center">
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <p>Email: contact@totalsolutions.com</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="#services" onclick="loadPage('service.html')">Services</a>
+          <a href="#about" onclick="loadPage('aboutus.html')">About Us</a>
+          <a href="#therapyplans" onclick="loadPage('therapycost.html')"
+            >Therapy Plans</a
+          >
+          <a href="#contactSection">Contact</a>
+        </div>
+        <div class="footer-section">
+          <h4>Service Links</h4>
+          <a href="#service">Assessment & Evaluation</a>
+          <a href="#about">occupational Therapy</a>
+          <a href="#contactus">Behaviour Therapy</a>
+          <a href="#contactus">Remedial Therapy</a>
+          <a href="#contactus">Behaviour Modification</a>
+          <a href="#contactus">Speech Therapy</a>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="Instagram" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="YouTube" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Total Solutions. All Rights Reserved.</p>
+        <p>
+          <a href="#privacy">Privacy Policy</a> |
+          <a href="#terms">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Move scripts to bottom and add proper reference -->
+    <script src="index.js" defer></script>
+  </body>
+</html>

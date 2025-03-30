@@ -1,0 +1,67 @@
+.therapy-programs {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+}
+
+.program-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+}
+
+/* Therapy Cards */
+.therapy-card {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.therapy-header {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.therapy-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.detail-box {
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
+
+.detail-box h4 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+
+.coordinate-details {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #ecf0f1;
+  border-radius: 8px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .therapy-details {
+    grid-template-columns: 1fr;
+  }
+}
