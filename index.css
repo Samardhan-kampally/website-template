@@ -159,12 +159,12 @@ body {
 }
 
 .carousel-slide:nth-child(2) {
-  background-image: url("https://source.unsplash.com/random/1920x1080/?care");
+  background-image: url("images/behaviourtherapyslide.jpeg");
   animation-delay: 4s;
 }
 
 .carousel-slide:nth-child(3) {
-  background-image: url("https://source.unsplash.com/random/1920x1080/?health");
+  background-image: url("images/speechtherapyslide.jpeg");
   animation-delay: 8s;
 }
 
