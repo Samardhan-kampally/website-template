@@ -23,3 +23,34 @@ document.getElementById("phone").addEventListener("input", function () {
 
   this.value = phoneInput;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+  const body = document.querySelector("body");
+
+  // Toggle menu
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    navLinks.classList.toggle("active");
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
+
+  // Close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+      navLinks.classList.remove("active");
+    }
+  });
+
+  // Close menu on scroll
+  window.addEventListener("scroll", () => {
+    navLinks.classList.remove("active");
+  });
+});
